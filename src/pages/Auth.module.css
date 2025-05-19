@@ -1,0 +1,77 @@
+/* Auth.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.auth-header {
+  padding: 24px 24px 16px;
+  text-align: center;
+}
+
+.auth-header h2 {
+  font-size: 1.5rem;
+  color: #1a202c;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.auth-header p {
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 16px;
+  text-align: center;
+  color: #4a5568;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.auth-tab:hover {
+  color: #2d3748;
+  background-color: #f8fafc;
+}
+
+.auth-tab.active-tab {
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
+}
+
+.auth-content {
+  padding: 24px;
+}
+
+/* Clerk component overrides */
+.cl-rootBox {
+  width: 100% !important;
+}
+
+.cl-card {
+  box-shadow: none !important;
+  background: transparent !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
